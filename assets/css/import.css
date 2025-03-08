@@ -1,0 +1,128 @@
+:root {
+    --bg-main-custom: #00060f;
+    --bg-header-custom: #030e21;
+    --color-custom: #00bbfa;
+    --secondary-p-custom: #000;
+    --btns-color-custom: #183358;
+    --btns-color-custom-hover: #2a3f5e;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main-custom);
+}
+
+.header-container {
+    background-color: var(--bg-header-custom);
+}
+
+.rounded-circle-custom {
+    border-radius: 50%;
+    border: solid 2px var(--color-custom);
+}
+
+.span_logo {
+    color: var(--color-custom);
+}
+
+.btns_style {
+    background-color: var(--btns-color-custom);
+    border-color: var(--btns-color-custom);
+}
+
+.btns_style:hover {
+    background-color: var(--btns-color-custom-hover);
+    border-color: var(--btns-color-custom-hover);
+}
+
+.navigation_floating {
+    top: 100px;
+    background-color: #00000077;
+    padding: 1vh;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+}
+
+.navigation_floating li, a {
+    font-size: 0.9em;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+}
+
+.photo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.photo_main {
+    position: absolute;
+    display: flex;
+    width: 340px;
+    height: 340px;
+}
+
+.photo_main img {
+    width: 100%;
+}
+
+.fill_white {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+}
+
+.skills {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    border: solid 2px var(--btns-color-custom-hover);
+    /* animation: rotate-rounded 10s linear infinite; */
+}
+
+.skills .icons {
+    position: relative;
+    left: -50%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills .icons .img_box {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transform: rotate(calc(360deg/13 * var(--i)));
+    transform-origin: 275px;
+    z-index: 110;
+}
+
+.skills .icons .img_box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    transform: rotate(calc(-360deg/13 * var(--i)));
+    animation: imga 10s linear infinite;
+}
+
+@keyframes rotate-rounded {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
