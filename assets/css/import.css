@@ -14,6 +14,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -138,4 +139,16 @@ a {
 
 .card_skills img{
     width: 50px;
+}
+
+.detail_text {
+    display: inline-block;
+    border-left: solid 1px var(--color-custom);
+    padding-left: 7px;
+    transition: 0.2s;
+    cursor:default;
+}
+
+.detail_text:hover {
+    border-left: solid 5px var(--color-custom);
 }

@@ -5,12 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
+    <link rel="shortcut icon" href="assets/icons/rust.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/import.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header class="header-container">
         <nav class="navbar">
             <div class="container-fluid d-flex justify-content-between">
@@ -21,6 +27,7 @@
             </div>
         </nav>
     </header>
+    <!-- Floating navigation -->
     <nav class="sticky-sm-top d-flex justify-content-center align-items-center">
         <div class="navigation_floating d-flex gap-2 mt-2 p-2 text-white">
             <li class="nav_link"><a href="#home">Home</a></li>
@@ -84,22 +91,23 @@
         </div>
         <div class="btns_social_medias d-flex mx-auto p-3 gap-3">
             <a class="btn btns_style mx-auto d-flex justify-content-center align-items-center gap-2"
-                href="assets/download/Guilherme-5.pdf" role="button" download=""><img src="assets/icons/download.svg" alt="Download image" class="fill_white">
+                href="assets/download/Guilherme-5.pdf" role="button" download=""><img src="assets/icons/download.svg"
+                    alt="Download image" class="fill_white">
                 Download CV</a>
             <a class="btn  btns_style mx-auto d-flex justify-content-center align-items-center gap-2"
-                href="#" role="button"><img src="assets/icons/github.svg" 
-                alt="Github link"
-                    class="fill_white"> Github</a>
+                href="https://github.com/glrmrissi" role="button" target="_blank"><img src="assets/icons/github.svg"
+                    alt="Github link" class="fill_white"> Github</a>
             <a class="btn  btns_style mx-auto d-flex justify-content-center align-items-center gap-2"
-                href="#" role="button"><img src="assets/icons/linkedin.svg" 
-                alt="Linkedin link"
-                    class="fill_white"> LinkedIn</a>
+                href="https://www.linkedin.com/in/guilherme-rissi-b90382337/" role="button" target="_blank"><img
+                    src="assets/icons/linkedin.svg" alt="Linkedin link" class="fill_white"> LinkedIn</a>
         </div>
     </section>
     <!-- About me  -->
-    <section class="container-fluid vh-100 d-flex flex-column mx-auto justify-content-center align-items-center"
-        style="padding: 6dvh;" id="sobremim">
-        <h3 class="text-white" alt="Sobre mim">Sobre mim:</h3>
+    <section class="container-fluid vh-100 d-flex flex-column justify-content-center" style="padding: 6dvh;"
+        id="sobremim">
+        <div>
+            <h3 class="text-white detail_text" alt="Sobre mim">Sobre mim:</h3>
+        </div>
         <article class="row">
             <aside class="container-fluid col-6 mx-auto d-flex align-items-center justify-content-center">
                 <p class="text-white p-5">Amo programar, jogar video games e gosto de cuidar de cachorros. Comecei a
@@ -116,8 +124,8 @@
     </section>
     <!-- Skills -->
     <section class="container-fluid vh-100 d-flex flex-column mx-auto justify-content-center align-items-center"
-    style="padding: 6dvh;" id="skills">
-        <div class="container grid">
+        style="padding: 6dvh;" id="skills">
+        <div class="container-fluid grid">
             <div class="row gap-2 p-2">
                 <article class="card_skills col">
                     <img src="assets/icons/html.svg" alt="">
@@ -174,9 +182,12 @@
         </div>
     </section>
     <!-- Projects -->
-    <section class="container-fluid vh-100 d-flex flex-column mx-auto justify-content-center align-items-center" id="projetos">
-        <h3 class="text-white">Projetos:</h3>
-        <article class="d-flex gap-3">
+    <section class="container-fluid vh-100 d-flex flex-column justify-content-center" id="projetos"
+        style="padding: 6dvh;">
+        <div>
+            <h3 class="text-white detail_text">Projetos:</h3>
+        </div>
+        <article class="d-flex justify-content-center align-items-center mx-auto gap-3">
             <a href="https://glrmrissi.github.io/mangasKitsu/" class="text-decoration-none">
                 <div class="card text-bg-dark" style="width: 18rem;">
                     <img src="assets/img/siteanime.png" class="card-img-top" alt="...">
@@ -191,7 +202,8 @@
                     <img src="assets/img/siteforca.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-danger">Jogo da forca</h5>
-                        <p class="card-text">Jogo da forca, realizado para um trabalho escolar, sobre Sáude e bem-estar.</p>
+                        <p class="card-text">Jogo da forca, realizado para um trabalho escolar, sobre Sáude e bem-estar.
+                        </p>
                     </div>
                 </div>
             </a>
@@ -200,13 +212,15 @@
                     <img src="assets/img//maratona.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title text-danger">Maratona Paraná</h5>
-                        <p class="card-text">Realizado para disputar a maratona Paraná, descontinuado por falta de incentivo escolar.</p>
+                        <p class="card-text">Realizado para disputar a maratona Paraná, descontinuado por falta de
+                            incentivo escolar.</p>
                     </div>
                 </div>
             </a>
         </article>
     </section>
 </body>
+<script src="assets/js/msgcute.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
