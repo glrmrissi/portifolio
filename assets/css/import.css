@@ -67,10 +67,17 @@ body {
 
 .navigation_floating li,
 a {
+    padding: 2px ;
     font-size: 0.9em;
     text-decoration: none;
     list-style: none;
-    color: #fff;
+    color: var(--color-main);
+}
+
+.navigation_floating li a.act {
+    background-color: var(--btn-color-cv);
+    border-radius: 6px;
+    padding: 4px;
 }
 
 .photo {
@@ -148,8 +155,8 @@ a {
 .card_skills {
     display: flex;
     flex-direction: column;
-    font-size: 0.9em;
-    height: 30dvh;
+    font-size: 0.8em;
+    height: 20dvh;
     justify-content: center;
     background-color: #2d2b2b;
     color: var(--color-main);
