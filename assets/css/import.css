@@ -6,6 +6,8 @@
     --secondary-p-custom: #0a0a0a;
     --btns-color-custom: #244774;
     --btns-color-custom-hover: #36577d;
+    --btn-color-cv: #447b91;
+    --btn-color-github: #2d2d2d;
 
 }
 
@@ -39,6 +41,15 @@ body {
     color: var(--color-main);
 }
 
+.btns_style:hover:nth-child(1) {
+    background-color: var(--btn-color-cv);
+    border-color: var(--btn-color-cv);
+}
+.btns_style:hover:nth-child(2) {
+    background-color: var(--btn-color-github);
+    border-color: var(--btn-color-github);
+}
+
 .btns_style:hover {
     background-color: var(--btns-color-custom-hover);
     border-color: var(--btns-color-custom-hover);
@@ -46,6 +57,7 @@ body {
 }
 
 .navigation_floating {
+    font-size: 1.1em;
     top: 100px;
     background-color: #39393953;
     padding: 2dvh;
@@ -134,10 +146,23 @@ a {
 }
 
 .card_skills {
-    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9em;
+    height: 30dvh;
+    justify-content: center;
+    background-color: #2d2b2b;
+    color: var(--color-main);
+    border-radius: 4px;
+}
+
+.card_skills div {
+    width: 100%;
+    height: 100%;
 }
 
 .card_skills img{
+    padding: 10px 0 10px 0;
     width: 50px;
 }
 
@@ -146,7 +171,7 @@ a {
     border-left: solid 1px var(--color-custom);
     padding-left: 7px;
     transition: 0.2s;
-    cursor:default;
+    cursor: default;
 }
 
 .detail_text:hover {
