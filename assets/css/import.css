@@ -6,12 +6,11 @@
     --color-main: #fff;
     --secondary-p-custom: #0a0a0a;
     --btns-color-custom: #244774;
-    --btns-color-custom-hover: #36577d;
+    --btns-color-custom-hover: #4778b0;
     --btn-color-cv: #447b91;
     --btn-color-github: #2d2d2d;
 
 }
-
 
 * {
     padding: 0;
@@ -76,6 +75,13 @@ a {
     color: var(--color-main);
 }
 
+.navigation_floating li
+a:hover {
+    background-color: var(--btns-color-custom-hover);
+    border-radius: 6px;
+    padding: 2px;
+}
+
 .navigation_floating li a.act {
     background-color: var(--btns-color-custom);
     border-radius: 6px;
@@ -111,7 +117,6 @@ a {
     height: 500px;
     border-radius: 50%;
     border: solid 2px var(--btns-color-custom-hover);
-    /* animation: rotate-rounded 10s linear infinite; */
 }
 
 .skills .icons {
@@ -141,17 +146,6 @@ a {
     width: 50px;
     height: 50px;
     transform: rotate(calc(-360deg/13 * var(--i)));
-    animation: imga 10s linear infinite;
-}
-
-@keyframes rotate-rounded {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
 }
 
 .card_skills {
@@ -272,7 +266,7 @@ a {
             from 0deg,
             transparent 5%,
             var(--btns-color-custom-hover) 60%,
-            transparent 98%
+            transparent 99%
         );
     }
     100% {
@@ -280,7 +274,7 @@ a {
             from 360deg,
             transparent 5%,
             var(--btns-color-custom-hover) 60%,
-            transparent 98%
+            transparent 99%
         );
     }
 }
