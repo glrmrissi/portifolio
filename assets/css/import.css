@@ -269,6 +269,27 @@ a:hover {
     padding: 3px;
 }
 
+.footer_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 45dvh;
+}
+.t {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.t img {
+    height: 5rem;
+}
+
 #btnTop {
     display: flex;
     position: fixed;
